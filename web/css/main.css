@@ -1,0 +1,28 @@
+/* reset the browser */
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body {
+	/* background-image:url('/media/shattered.png'); */
+	/* background-repeat:repeat-y repeat-x; */
+	background-color: #E5E5E5;
+	font: 12px sans-serif;
+}
+
+div.contentwrapper {
+	border-style:solid;
+	border-width:1px;
+	background-color: white;
+	width: 1100px;
+	margin: auto;
+}
+
+div.content {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
