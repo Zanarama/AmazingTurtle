@@ -1,0 +1,28 @@
+A short list of todo's to bring AmazingTurtle 'to the next level' to get it ready for deployment into 'any classroom enviornment'.
+
+1. Fully document process of how to install Python 2.7
+	1a. Windows
+	1b. Mac OS
+	1c. Ubuntu
+	1d. Fedora
+
+2. Fully document how to bring up enviornment for writing turtle code
+	2a. Open idle
+	2b. Create new file
+	2c. Save file
+	2d. Run file
+	
+3. Full documentation of possible commands
+	3a. Simple set
+	3b. Advanced set
+	
+4. Create handouts
+	4a. commands
+	4b. angles
+	4c. 
+	
+5. How-to demonstration
+	5a. describe 'dumb' concept
+	5b. walk
+	5c. turn
+	5d. 
