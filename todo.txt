@@ -26,3 +26,8 @@ A short list of todo's to bring AmazingTurtle 'to the next level' to get it read
 	5b. walk
 	5c. turn
 	5d. 
+	
+6. Continue to hack on static web page concept
+	6a. run with game idea?
+	6b. about page
+	6c. fork-me link
