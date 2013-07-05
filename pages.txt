@@ -5,6 +5,10 @@ Public Pages:
 	Description: Landing page that has a brief description of what the site is, and who can use it.  A 
 				list to other resources on the site, as well as the login link
 
+	Name: About page
+	File: about.php
+	Description: about page for the site, describing what the site is and what it can be used for.
+
 	Name: Login
 	File: login.php
 	Description: Loing with username, password, organization inputs
@@ -35,14 +39,14 @@ Student Pages:
 	Name: class.php
 	File: class.php
 	Description: This is where all the information for the class will be presented.  Things such as 
-				assignments, chalenges, classmates names, etc. will all be present here.
+				assignments, challenges, classmates names, etc. will all be present here.
 
 
 Instructor pages:
 
 	Name: Create Class
 	File: createclass.php
-	Description: Allows an instructor to create a new class within a suborg and place stududents within
+	Description: Allows an instructor to create a new class within a suborg and place students within
 				it.
 				
 	Name: Create Student
