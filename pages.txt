@@ -1,0 +1,63 @@
+Public Pages:
+
+	Name: Landing page
+	File: index.php
+	Description: Landing page that has a brief description of what the site is, and who can use it.  A 
+				list to other resources on the site, as well as the login link
+
+	Name: Login
+	File: login.php
+	Description: Loing with username, password, organization inputs
+
+	Name: Logout
+	File logout.php
+	Description: Logout script, will forward back to the landing page
+
+	Name: Blog
+	File: blog.php
+	Description: Simple blog with comments to talk about advances with the website and the current state
+				of implementation and usage models.
+
+
+Student Pages:
+
+	Name: Student landing page
+	File: student.php
+	Description: Landing page for students after they login.  Allows them to see stands on themselves, 
+				see their programs, what classes they have taken, are taking, and other classes that 
+				may be available in their organization.
+
+	Name: Classes page
+	File: classes.php
+	Description: List of all the classes the student is currently enrolled in.  Allows the student to 
+				enter the class if it is currently in session.
+				
+	Name: class.php
+	File: class.php
+	Description: This is where all the information for the class will be presented.  Things such as 
+				assignments, chalenges, classmates names, etc. will all be present here.
+
+
+Instructor pages:
+
+	Name: Create Class
+	File: createclass.php
+	Description: Allows an instructor to create a new class within a suborg and place stududents within
+				it.
+				
+	Name: Create Student
+	File: createstudent.php
+	Description: Allows an instructor to create a new student profile and login.
+
+
+Supervisor Pages:
+
+	Name: Admin Home
+	File: admin/home.php
+	Description: Allows the supervisor to manage suborgs, classes, instructors, and students accounts 
+				and configurations
+	
+	
+Admin Pages:
+
+	Name:
