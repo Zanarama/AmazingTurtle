@@ -5,6 +5,8 @@
 
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	
+	<!--[if IE]><script type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+	
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/skulpt.js" type="text/javascript"></script>
 	<script src="js/builtin.js" type="text/javascript"></script>
@@ -15,52 +17,60 @@
 	<div class="contentwrapper">
 		<div class="content">
 		
-			<center>
-		
 			<script type="text/javascript"> 
-			// output functions are configurable.  This one just appends some text
-			// to a pre element.
-			function outf(text) { 
-				var mypre = document.getElementById("output"); 
-				mypre.innerHTML = mypre.innerHTML + text; 
-			} 
-			function builtinRead(x) {
-				if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
-						throw "File not found: '" + x + "'";
-				return Sk.builtinFiles["files"][x];
-			}
-			 
-			// Here's everything you need to run a python program in skulpt
-			// grab the code from your textarea
-			// get a reference to your pre element for output
-			// configure the output function
-			// call Sk.importMainWithBody()
-			function runit() { 
-			   var prog = document.getElementById("yourcode").value; 
-			   var mypre = document.getElementById("output"); 
-			   mypre.innerHTML = ''; 
-			   Sk.canvas = "mycanvas";
-			   Sk.pre = "output";
-			   Sk.configure({output:outf, read:builtinRead}); 
-			   eval(Sk.importMainWithBody("<stdin>",false,prog)); 
-			} 
+
+				function outf(text) { 
+					var mypre = document.getElementById("output"); 
+					mypre.innerHTML = mypre.innerHTML + text; 
+				} 
+				function builtinRead(x) {
+					if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
+							throw "File not found: '" + x + "'";
+					return Sk.builtinFiles["files"][x];
+				}
+
+				function runit() {
+				   var prog = document.getElementById("yourcode").value; 
+				   var mypre = document.getElementById("output"); 
+				   mypre.innerHTML = ''; 
+				   Sk.canvas = "mycanvas";
+				   Sk.pre = "output";
+				   Sk.configure({output:outf, read:builtinRead});
+				   
+				   //var thecode = 'print "HI!"\n' + prog;
+				   var thecode = prog;
+				   
+				   eval(Sk.importMainWithBody("<stdin>",false,thecode)); 
+				} 
+			
 			</script> 
 			 
-			<h3>Try This</h3> 
+			<h3>Enter your code here:</h3> 
+			
+			<center>
+			
 			<form> 
-			<textarea id="yourcode" cols="40" rows="10">
+				<textarea id="turtlecode" cols="40" rows="10">
 import turtle
-			 
+
 t = turtle.Turtle()
+
+t.shape('turtle')
+t.color('red')
 t.forward(100)
-			 
-print "Hello World" 
-			</textarea><br /> 
-			<button type="button" onclick="runit()">Run</button> 
+
+print "Go turtle go!"
+				</textarea>
+				<br><br> 
+				<button type="button" onclick="runit()">Run It!</button>
+				<br><br>
 			</form> 
-			<pre id="output" ></pre> 
-			<!-- If you want turtle graphics include a canvas -->
-			<canvas id="mycanvas" style="border:1px solid #000000;"></canvas> 
+			
+			<canvas id="mycanvas" width="675" height="580" style="border:1px solid #000000; background: lightblue"></canvas> 
+			
+			<br><br>
+			
+			<pre id="output" style="text-align: left; border:1px solid #000000;">Zee Output here!</pre> 
 			
 			</center>
 		
