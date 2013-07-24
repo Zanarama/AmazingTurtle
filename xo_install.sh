@@ -1,7 +1,7 @@
 #!/bin/bash
 
-yum install git
-yum install tkinter
+yum install -y git
+yum install -y tkinter
 mkdir code
 cd code
 git clone git://github.com/Zanarama/AmazingTurtle
