@@ -1,9 +1,7 @@
 #!/bin/bash
 
-su
 yum install git
 yum install tkinter
-exit
 mkdir code
 cd code
 git clone git://github.com/Zanarama/AmazingTurtle
