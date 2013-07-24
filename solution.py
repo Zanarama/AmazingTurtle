@@ -1,20 +1,16 @@
+# This imports the turtle!
 from turtle import*
+
+# This imports the maze
 import maze
 
-# A place for students to create their solution
-# A quick fix for some students not being able to create files
-# On the WCBOE computers
+# Then the maze is drawn
+maze.drawMaze()
 
-#maze.drawMaze()
-#forward (50)
-#right (65)
-#forward (60)
-#left (110)
-#forward (60)
-#color ("purple")
-#right(90)
-#forward (100)
+# Put your code below here:
 
-maze.drawMazeTwo()
-maze.completeMazeTwo()
+
+
+# But above here
+# This tells the program to exit
 exitonclick()
