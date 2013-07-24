@@ -1,0 +1,21 @@
+Here is the text pulled off of the static website.  This can be a living document of text to display to the students as they move through the learning process on the website.
+
+Intro
+	Hi There! My name is Turtle. I want to tell you something really awesome about the very computer you are using right now: you are smarter than it, and not only that, but you can tell it what to do! You tell a computer what to do by writing programs. I can help you start writing your own programs right now, just click the link below!
+
+What's a program?
+	A program is a set of instructions that a computer follows to do something. A program can get you onto the internet, help you create pictures, or help you write down your thoughts so you can save them later. Programs are what make computers so useful!
+	
+How do I create one?
+	There are many different ways to tell a computer what to do, but the most common is with a programming language. There are lots and lots of languages out there, each with their own strengths and weaknesses. Today, we are going to be working with a programming language called python. Python is a powerful language that will allow you to create fun programs before you know it!
+
+But how do I do it?
+	With the python programming we can tell turtle what to do! First, we need to understand that python needs to know that we want to talk to turtle, and not someone else - so we need to write some 'code' to do that. With this 'code' we can make turtle do whatever we want!
+
+How do I tell turtle to move?
+	We can give turtle commands such as forward, backward, right, and left. We need to tell turtle how far we want him to go. Turtle doesn't understand feet, inches, or meters, he only understands turtle units! let's give it a try, click the 'go' button below to give turtle some commands:
+	
+What else can I do!?
+	Now that you can see turtle move, let's see if we can make this a bit more exciting. It looks like our friend turtle has got himself stuck in a maze! let's see if we can use computer programming to get him out of there!	
+	
+	
