@@ -6,8 +6,8 @@
 }
 
 body {
-	/* background-image:url('/media/shattered.png'); */
-	/* background-repeat:repeat-y repeat-x; */
+	background-image:url('../media/cream_pixels.png');
+	 background-repeat:repeat-y repeat-x;
 	background-color: #FFFFFF;
 	font-family: 'Cherry Swash', cursive;
 	font-size: 18px;
