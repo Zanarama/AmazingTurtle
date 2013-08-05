@@ -2,20 +2,43 @@ import Tkinter as tk
 import tkMessageBox
 from turtle import *
 
+
 def translate(commands):
+    """
+    Takes in a string of turtle commands
+    parses it and then runs the correct
+    turtle code
+
+    :type commands: string
+    :param commands: string of turtle commands
+    """
+
+    # splits string into an array of commands
+    script = commands.split("\n")
+
+    # parses through array of commands matching turtle code
     for line in script:
+
+        # Checks and ingnores empty lines
         if len(line) > 0:
+
+            # Splits between function and parameters
             instruction = line.split("(")
+
+            # Checks if code function call was complete
             if len(instruction) < 2:
-                tkMessageBox.showerror("Command Not Found", line + "does not exits")
+                tkMessageBox.showerror("Command Not Found", line +
+                                       "does not exits")
                 return
 
+            # Checks if param is int or string
+            # Then stores accordingly
             if instruction[1][0] == "\"" or instruction[1][0] == "\'":
                 value = instruction[1][1:len(instruction[1]) - 2]
             else:
                 value = int(instruction[1][:len(instruction[1]) - 1])
 
-            print value
+            # Finds matching turtle code
             if instruction[0] == "forward":
                 forward(value)
             elif instruction[0] == "right":
@@ -34,6 +57,10 @@ def translate(commands):
                 speed(value)
             elif instruction[0] == "seth":
                 seth(value)
+            elif instruction[0] == "pensize":
+                pensize(value)
+            elif instruction[0] == "circle":
+                circle(value)
             elif instruction[0] == "color":
                 if value == "alice blue":
                     color('alice blue')
@@ -1539,10 +1566,13 @@ def translate(commands):
                     color('yellow4')
                 elif value == "YellowGreen":
                     color('YellowGreen')
+                # Color not in dictionary
                 else:
-                    tkMessageBox.showerror("Error", "Color, " + value + ", not available")
-                print value
+                    tkMessageBox.showerror("Error", "Color, " + value +
+                                           ", not available")
+
+            # If command is not it one of the defined turtle code options
             else:
-                tkMessageBox.showerror("Command Not Found", line + "does not exits")
+                tkMessageBox.showerror("Command Not Found", line +
+                                       "does not exits")
                 return
-        
